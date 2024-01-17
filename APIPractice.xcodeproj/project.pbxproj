@@ -23,6 +23,8 @@
 		A01D3CF82B57A9B900C1AC43 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CF62B57A9B900C1AC43 /* BookCollectionViewCell.swift */; };
 		A01D3CF92B57A9B900C1AC43 /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01D3CF72B57A9B900C1AC43 /* BookCollectionViewCell.xib */; };
 		A01D3CFC2B57AC0900C1AC43 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CFB2B57AC0900C1AC43 /* Protocol.swift */; };
+		A01D3CFE2B582C4600C1AC43 /* PapagoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CFD2B582C4600C1AC43 /* PapagoAPIManager.swift */; };
+		A01D3D002B58799E00C1AC43 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CFF2B58799E00C1AC43 /* Language.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		A01D3CF62B57A9B900C1AC43 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
 		A01D3CF72B57A9B900C1AC43 /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
 		A01D3CFB2B57AC0900C1AC43 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		A01D3CFD2B582C4600C1AC43 /* PapagoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapagoAPIManager.swift; sourceTree = "<group>"; };
+		A01D3CFF2B58799E00C1AC43 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				A01D3CF42B57A95300C1AC43 /* Book.swift */,
+				A01D3CFF2B58799E00C1AC43 /* Language.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				A01D3CE32B57A11600C1AC43 /* LanguageViewController.swift */,
+				A01D3CFD2B582C4600C1AC43 /* PapagoAPIManager.swift */,
 			);
 			path = Language;
 			sourceTree = "<group>";
@@ -216,7 +222,9 @@
 				A01D3CFC2B57AC0900C1AC43 /* Protocol.swift in Sources */,
 				A01D3CED2B57A3DC00C1AC43 /* BookAPIManager.swift in Sources */,
 				A01D3CD02B57A07100C1AC43 /* SceneDelegate.swift in Sources */,
+				A01D3CFE2B582C4600C1AC43 /* PapagoAPIManager.swift in Sources */,
 				A01D3CEB2B57A2CB00C1AC43 /* APIKey.swift in Sources */,
+				A01D3D002B58799E00C1AC43 /* Language.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

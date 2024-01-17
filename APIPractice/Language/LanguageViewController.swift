@@ -9,21 +9,38 @@ import UIKit
 
 class LanguageViewController: UIViewController {
 
+    @IBOutlet var sourceLang: UILabel!
+    @IBOutlet var targetLang: UILabel!
+    @IBOutlet var changeBtn: UIButton!
+    @IBOutlet var textView: UITextView!
+    @IBOutlet var transLabel: UILabel!
+    @IBOutlet var transBtn: UIButton!
+    
+    let manager = PapagoAPIManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        transBtn.addTarget(self, action: #selector(tapChageBtn), for: .touchUpInside)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func tapChageBtn(){
+        guard let text = textView.text else {
+            return
+        }
+        
+        manager.callRequest(text: text) { value in
+            self.transLabel.text = value.message.result.translatedText
+            self.sourceLang.text = value.message.result.srcLangType
+            self.targetLang.text = value.message.result.tarLangType
+        }
+        view.endEditing(true)
     }
-    */
 
+}
+
+extension LanguageViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        textView.textColor = .black
+    }
 }
