@@ -15,6 +15,14 @@
 		A01D3CE22B57A10700C1AC43 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CE12B57A10700C1AC43 /* BookViewController.swift */; };
 		A01D3CE42B57A11600C1AC43 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CE32B57A11600C1AC43 /* LanguageViewController.swift */; };
 		A01D3CE62B57A24000C1AC43 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A01D3CE52B57A24000C1AC43 /* .gitignore */; };
+		A01D3CEB2B57A2CB00C1AC43 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CEA2B57A2CB00C1AC43 /* APIKey.swift */; };
+		A01D3CED2B57A3DC00C1AC43 /* BookAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CEC2B57A3DC00C1AC43 /* BookAPIManager.swift */; };
+		A01D3CF02B57A43700C1AC43 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A01D3CEF2B57A43700C1AC43 /* Kingfisher */; };
+		A01D3CF32B57A43F00C1AC43 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A01D3CF22B57A43F00C1AC43 /* Alamofire */; };
+		A01D3CF52B57A95300C1AC43 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CF42B57A95300C1AC43 /* Book.swift */; };
+		A01D3CF82B57A9B900C1AC43 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CF62B57A9B900C1AC43 /* BookCollectionViewCell.swift */; };
+		A01D3CF92B57A9B900C1AC43 /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01D3CF72B57A9B900C1AC43 /* BookCollectionViewCell.xib */; };
+		A01D3CFC2B57AC0900C1AC43 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D3CFB2B57AC0900C1AC43 /* Protocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,12 @@
 		A01D3CE12B57A10700C1AC43 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		A01D3CE32B57A11600C1AC43 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		A01D3CE52B57A24000C1AC43 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A01D3CEA2B57A2CB00C1AC43 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		A01D3CEC2B57A3DC00C1AC43 /* BookAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAPIManager.swift; sourceTree = "<group>"; };
+		A01D3CF42B57A95300C1AC43 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		A01D3CF62B57A9B900C1AC43 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		A01D3CF72B57A9B900C1AC43 /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
+		A01D3CFB2B57AC0900C1AC43 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01D3CF02B57A43700C1AC43 /* Kingfisher in Frameworks */,
+				A01D3CF32B57A43F00C1AC43 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +76,7 @@
 		A01D3CCC2B57A07100C1AC43 /* APIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				A01D3CFA2B57ABA900C1AC43 /* Extension */,
 				A01D3CE82B57A25200C1AC43 /* Model */,
 				A01D3CE92B57A25900C1AC43 /* Language */,
 				A01D3CE72B57A24E00C1AC43 /* Book */,
@@ -70,6 +87,7 @@
 				A01D3CD82B57A07500C1AC43 /* LaunchScreen.storyboard */,
 				A01D3CDB2B57A07500C1AC43 /* Info.plist */,
 				A01D3CE52B57A24000C1AC43 /* .gitignore */,
+				A01D3CEA2B57A2CB00C1AC43 /* APIKey.swift */,
 			);
 			path = APIPractice;
 			sourceTree = "<group>";
@@ -78,6 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				A01D3CE12B57A10700C1AC43 /* BookViewController.swift */,
+				A01D3CEC2B57A3DC00C1AC43 /* BookAPIManager.swift */,
+				A01D3CF62B57A9B900C1AC43 /* BookCollectionViewCell.swift */,
+				A01D3CF72B57A9B900C1AC43 /* BookCollectionViewCell.xib */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -85,6 +106,7 @@
 		A01D3CE82B57A25200C1AC43 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A01D3CF42B57A95300C1AC43 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +117,14 @@
 				A01D3CE32B57A11600C1AC43 /* LanguageViewController.swift */,
 			);
 			path = Language;
+			sourceTree = "<group>";
+		};
+		A01D3CFA2B57ABA900C1AC43 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A01D3CFB2B57AC0900C1AC43 /* Protocol.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +143,10 @@
 			dependencies = (
 			);
 			name = APIPractice;
+			packageProductDependencies = (
+				A01D3CEF2B57A43700C1AC43 /* Kingfisher */,
+				A01D3CF22B57A43F00C1AC43 /* Alamofire */,
+			);
 			productName = APIPractice;
 			productReference = A01D3CCA2B57A07100C1AC43 /* APIPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +175,10 @@
 				Base,
 			);
 			mainGroup = A01D3CC12B57A07100C1AC43;
+			packageReferences = (
+				A01D3CEE2B57A43700C1AC43 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				A01D3CF12B57A43F00C1AC43 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A01D3CCB2B57A07100C1AC43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,6 +197,7 @@
 				A01D3CDA2B57A07500C1AC43 /* LaunchScreen.storyboard in Resources */,
 				A01D3CD72B57A07500C1AC43 /* Assets.xcassets in Resources */,
 				A01D3CD52B57A07100C1AC43 /* Main.storyboard in Resources */,
+				A01D3CF92B57A9B900C1AC43 /* BookCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,9 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01D3CE22B57A10700C1AC43 /* BookViewController.swift in Sources */,
+				A01D3CF82B57A9B900C1AC43 /* BookCollectionViewCell.swift in Sources */,
 				A01D3CCE2B57A07100C1AC43 /* AppDelegate.swift in Sources */,
+				A01D3CF52B57A95300C1AC43 /* Book.swift in Sources */,
 				A01D3CE42B57A11600C1AC43 /* LanguageViewController.swift in Sources */,
+				A01D3CFC2B57AC0900C1AC43 /* Protocol.swift in Sources */,
+				A01D3CED2B57A3DC00C1AC43 /* BookAPIManager.swift in Sources */,
 				A01D3CD02B57A07100C1AC43 /* SceneDelegate.swift in Sources */,
+				A01D3CEB2B57A2CB00C1AC43 /* APIKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +376,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,9 +384,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Seou.APIPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -360,6 +409,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,9 +417,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Seou.APIPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -395,6 +449,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A01D3CEE2B57A43700C1AC43 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
+		A01D3CF12B57A43F00C1AC43 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A01D3CEF2B57A43700C1AC43 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01D3CEE2B57A43700C1AC43 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		A01D3CF22B57A43F00C1AC43 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A01D3CF12B57A43F00C1AC43 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A01D3CC22B57A07100C1AC43 /* Project object */;
 }
